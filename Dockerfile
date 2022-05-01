@@ -1,7 +1,7 @@
 FROM amd64/alpine:20220328
 RUN apk update && \
     apk add --no-cache \
-        python3=3.10.3-r0
+        python3=3.10.4-r0
 
 # App user
 ARG APP_USER="buildbot"
@@ -16,7 +16,7 @@ RUN adduser \
 
 # Server files
 ARG APP_VERSION="3.5.0"
-RUN MASTER_ARCHIVE="master.tar.gz"
+RUN MASTER_ARCHIVE="master.tar.gz" && \
     wget \
         --quiet \
         --output-document \
