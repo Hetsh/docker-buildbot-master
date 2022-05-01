@@ -1,7 +1,8 @@
 FROM amd64/alpine:20220328
 RUN apk update && \
     apk add --no-cache \
-        python3=3.10.4-r0
+        python3=3.10.4-r0 \
+        pythonispython3=3.10.4-r0
 
 # App user
 ARG APP_USER="buildbot"
