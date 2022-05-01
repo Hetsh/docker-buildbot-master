@@ -23,15 +23,7 @@ RUN MASTER_ARCHIVE="master.tar.gz" && \
         "$MASTER_ARCHIVE" \
         "https://github.com/buildbot/buildbot/releases/download/v$APP_VERSION/buildbot-$APP_VERSION.tar.gz" && \
     tar --extract --file="$MASTER_ARCHIVE" && \
-    rm "$MASTER_ARCHIVE" && \
-    WWW_ARCHIVE="www.tar.gz" && \
-    wget \
-        --quiet \
-        --output-document \
-        "$WWW_ARCHIVE" \
-        "https://github.com/buildbot/buildbot/releases/download/v$APP_VERSION/buildbot-www-$APP_VERSION.tar.gz" && \
-    tar --extract --file="$WWW_ARCHIVE" && \
-    rm "$WWW_ARCHIVE"
+    rm "$MASTER_ARCHIVE"
 
 # Volumes
 ARG BASE_DIR="/buildbot"
