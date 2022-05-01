@@ -20,16 +20,16 @@ RUN MASTER_ARCHIVE="master.tar.gz" && \
     wget \
         --quiet \
         --output-document \
-        "https://github.com/buildbot/buildbot/releases/download/v3.5.0/buildbot-3.5.0.tar.gz" \
-        "$MASTER_ARCHIVE" && \
+        "$MASTER_ARCHIVE" \
+        "https://github.com/buildbot/buildbot/releases/download/v$APP_VERSION/buildbot-$APP_VERSION.tar.gz" && \
     tar --extract --file="$MASTER_ARCHIVE" && \
     rm "$MASTER_ARCHIVE" && \
     WWW_ARCHIVE="www.tar.gz" && \
     wget \
         --quiet \
         --output-document \
-        "https://github.com/buildbot/buildbot/releases/download/v3.5.0/buildbot-www-3.5.0.tar.gz" \
-        "WWW_ARCHIVE" && \
+        "$WWW_ARCHIVE" \
+        "https://github.com/buildbot/buildbot/releases/download/v$APP_VERSION/buildbot-www-$APP_VERSION.tar.gz" && \
     tar --extract --file="$WWW_ARCHIVE" && \
     rm "$WWW_ARCHIVE"
 
