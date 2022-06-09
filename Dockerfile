@@ -91,3 +91,4 @@ RUN MASTER_ARCHIVE="master.tar.gz" && \
 USER "$APP_USER"
 WORKDIR "$DATA_DIR"
 ENTRYPOINT ["buildbot"]
+CMD ["start", "--nodaemon"]
