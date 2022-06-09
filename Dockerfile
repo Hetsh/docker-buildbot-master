@@ -1,8 +1,8 @@
 FROM amd64/alpine:20220328
 RUN apk update && \
     apk add --no-cache \
-        python3=3.10.4-r0 \
-        pythonispython3=3.10.4-r0 \
+        python3=3.10.5-r0 \
+        pythonispython3=3.10.5-r0 \
         py3-greenlet=1.1.2-r2 \
         py3-yaml=6.0-r0 \
         py3-jwt=2.4.0-r0 \
@@ -12,7 +12,7 @@ RUN apk update && \
         py3-alembic=1.7.7-r0 \
         py3-sqlalchemy=1.4.36-r0 \
         py3-zope-interface=5.4.0-r1 \
-        py3-msgpack=1.0.3-r0 \
+        py3-msgpack=1.0.4-r0 \
         py3-jinja2=3.0.3-r1 \
         py3-twisted=22.2.0-r0 \
         py3-setuptools=59.4.0-r0 \
