@@ -88,6 +88,9 @@ RUN MASTER_ARCHIVE="master.tar.gz" && \
     cd .. && \
     rm -r "$WWW_DIRECTORY"
 
+#      WEB-GUI  WORKERS
+EXPOSE 8010/tcp 9989/tcp
+
 USER "$APP_USER"
 WORKDIR "$DATA_DIR"
 ENTRYPOINT ["buildbot"]

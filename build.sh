@@ -30,6 +30,8 @@ case "${1-}" in
 			--rm \
 			--tty \
 			--interactive \
+			--publish 8010:8010/tcp \
+			--publish 9989:9989/tcp \
 			--mount type=bind,source=/etc/localtime,target=/etc/localtime,readonly \
 			"$IMG_NAME:test" create-master
 	;;
