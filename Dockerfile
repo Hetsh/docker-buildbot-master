@@ -13,7 +13,7 @@ RUN apk update && \
         py3-sqlalchemy=1.4.36-r0 \
         py3-zope-interface=5.4.0-r1 \
         py3-msgpack=1.0.4-r0 \
-        py3-jinja2=3.0.3-r1 \
+        py3-jinja2=3.1.2-r0 \
         py3-twisted=22.2.0-r0 \
         py3-setuptools=59.4.0-r0 \
         py3-hyperlink=21.0.0-r2 \
@@ -44,7 +44,7 @@ RUN adduser \
 VOLUME ["$DATA_DIR"]
 
 # Server files
-ARG APP_VERSION="3.5.0"
+ARG APP_VERSION=3.5.0
 RUN MASTER_ARCHIVE="master.tar.gz" && \
     wget \
         --quiet \
