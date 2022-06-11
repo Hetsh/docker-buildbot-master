@@ -33,7 +33,7 @@ case "${1-}" in
 			--publish 8010:8010/tcp \
 			--publish 9989:9989/tcp \
 			--mount type=bind,source=/etc/localtime,target=/etc/localtime,readonly \
-			"$IMG_NAME:test" create-master
+			"$IMG_NAME:test" --version
 	;;
 	# Build if it does not exist and push image to docker hub
 	"--upload")
