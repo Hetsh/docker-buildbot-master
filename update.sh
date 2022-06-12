@@ -35,7 +35,7 @@ update_pkg "py3-markupsafe" "Python Safe-Markup" "false" "$MAIN_PKG_URL" "(\d+\.
 update_pkg "py3-attrs" "Python Classes" "false" "$MAIN_PKG_URL" "(\d+\.)+\d+-r\d+"
 update_pkg "py3-idna" "Python IDNA" "false" "$MAIN_PKG_URL" "(\d+\.)+\d+-r\d+"
 update_pkg "py3-cffi" "Python C-FFI" "false" "$MAIN_PKG_URL" "(\d+\.)+\d+-r\d+"
-update_pkg "py3-cparser" "Python Hyperlink" "false" "$MAIN_PKG_URL" "(\d+\.)+\d+-r\d+"
+update_pkg "py3-cparser" "Python C-Parser" "false" "$MAIN_PKG_URL" "(\d+\.)+\d+-r\d+"
 # Community Repo
 COMMUNITY_PKG_URL="$BASE_PKG_URL/community/$IMG_ARCH"
 update_pkg "py3-greenlet" "Python Greenlet" "false" "$COMMUNITY_PKG_URL" "(\d+\.)+\d+-r\d+"
