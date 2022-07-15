@@ -1,4 +1,4 @@
-FROM amd64/alpine:20220328
+FROM amd64/alpine:20220715
 RUN apk update && \
     apk add --no-cache \
         git=2.37.1-r0 \
