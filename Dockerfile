@@ -15,7 +15,7 @@ RUN apk update && \
         py3-msgpack=1.0.4-r0 \
         py3-jinja2=3.1.2-r0 \
         py3-twisted=22.4.0-r0 \
-        py3-setuptools=65.1.0-r0 \
+        py3-setuptools=65.1.1-r0 \
         py3-hyperlink=21.0.0-r2 \
         py3-cryptography=37.0.4-r2 \
         py3-six=1.16.0-r2 \
