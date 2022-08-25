@@ -3,7 +3,7 @@ RUN apk update && \
     apk add --no-cache \
         git=2.37.1-r1 \
         python3=3.10.6-r1 \
-        py3-greenlet=1.1.2-r2 \
+        py3-greenlet=1.1.3-r0 \
         py3-yaml=6.0-r0 \
         py3-jwt=2.4.0-r0 \
         py3-autobahn=21.3.1-r2 \
@@ -22,7 +22,7 @@ RUN apk update && \
         py3-mako=1.2.1-r0 \
         py3-markupsafe=2.1.1-r1 \
         py3-typing-extensions=4.3.0-r0 \
-        py3-attrs=21.4.0-r0 \
+        py3-attrs=22.1.0-r0 \
         py3-automat=20.2.0-r2 \
         py3-incremental=21.3.0-r2 \
         py3-constantly=15.1.0-r5 \
