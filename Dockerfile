@@ -19,7 +19,7 @@ RUN apk update && \
         py3-hyperlink=21.0.0-r2 \
         py3-cryptography=37.0.4-r2 \
         py3-six=1.16.0-r3 \
-        py3-mako=1.2.2-r0 \
+        py3-mako=1.2.3-r0 \
         py3-markupsafe=2.1.1-r1 \
         py3-typing-extensions=4.3.0-r0 \
         py3-attrs=22.1.0-r0 \
