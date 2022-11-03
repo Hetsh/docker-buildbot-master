@@ -28,7 +28,9 @@ RUN apk update && \
         py3-constantly=15.1.0-r5 \
         py3-idna=3.4-r2 \
         py3-cffi=1.15.1-r0 \
-        py3-cparser=2.21-r0
+        py3-cparser=2.21-r0 \
+        py3-openssl=22.1.0-r1 \
+        py3-service_identity=21.1.0-r2
 
 # App user
 ARG APP_USER="buildbot"
