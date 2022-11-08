@@ -3,7 +3,7 @@ RUN apk update && \
     apk add --no-cache \
         git=2.38.1-r0 \
         python3=3.10.8-r3 \
-        py3-greenlet=2.0.0-r0 \
+        py3-greenlet=2.0.1-r0 \
         py3-yaml=6.0-r0 \
         py3-jwt=2.6.0-r0 \
         py3-autobahn=22.7.1-r0 \
