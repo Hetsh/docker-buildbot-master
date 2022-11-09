@@ -11,10 +11,10 @@ RUN apk update && \
         py3-dateutil=2.8.2-r1 \
         py3-alembic=1.7.7-r0 \
         py3-sqlalchemy=1.4.39-r0 \
-        py3-zope-interface=5.4.0-r1 \
+        py3-zope-interface=5.5.1-r0 \
         py3-msgpack=1.0.4-r0 \
         py3-jinja2=3.1.2-r0 \
-        py3-twisted=22.4.0-r0 \
+        py3-twisted=22.10.0-r0 \
         py3-setuptools=65.5.1-r0 \
         py3-hyperlink=21.0.0-r2 \
         py3-cryptography=38.0.3-r0 \
@@ -23,8 +23,8 @@ RUN apk update && \
         py3-markupsafe=2.1.1-r1 \
         py3-typing-extensions=4.4.0-r0 \
         py3-attrs=22.1.0-r0 \
-        py3-automat=20.2.0-r2 \
-        py3-incremental=21.3.0-r2 \
+        py3-automat=22.10.0-r0 \
+        py3-incremental=22.10.0-r0 \
         py3-constantly=15.1.0-r5 \
         py3-idna=3.4-r2 \
         py3-cffi=1.15.1-r0 \
