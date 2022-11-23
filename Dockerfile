@@ -2,9 +2,9 @@ FROM amd64/alpine:20221110
 RUN apk update && \
     apk add --no-cache \
         git=2.38.1-r0 \
-        python3=3.10.8-r3 \
+        python3=3.11.0-r2 \
         py3-greenlet=2.0.1-r0 \
-        py3-yaml=6.0-r0 \
+        py3-yaml=6.0-r1 \
         py3-jwt=2.6.0-r0 \
         py3-autobahn=22.7.1-r0 \
         py3-txaio=22.2.1-r0 \
@@ -13,22 +13,22 @@ RUN apk update && \
         py3-sqlalchemy=1.4.39-r0 \
         py3-zope-interface=5.5.1-r0 \
         py3-msgpack=1.0.4-r0 \
-        py3-jinja2=3.1.2-r0 \
+        py3-jinja2=3.1.2-r1 \
         py3-twisted=22.10.0-r0 \
-        py3-setuptools=65.6.0-r0 \
+        py3-setuptools=65.6.0-r1 \
         py3-hyperlink=21.0.0-r2 \
         py3-cryptography=38.0.3-r0 \
-        py3-six=1.16.0-r3 \
-        py3-mako=1.2.3-r0 \
-        py3-markupsafe=2.1.1-r1 \
+        py3-six=1.16.0-r4 \
+        py3-mako=1.2.3-r1 \
+        py3-markupsafe=2.1.1-r2 \
         py3-typing-extensions=4.4.0-r0 \
-        py3-attrs=22.1.0-r0 \
+        py3-attrs=22.1.0-r1 \
         py3-automat=22.10.0-r0 \
         py3-incremental=22.10.0-r0 \
         py3-constantly=15.1.0-r5 \
-        py3-idna=3.4-r2 \
-        py3-cffi=1.15.1-r0 \
-        py3-cparser=2.21-r0 \
+        py3-idna=3.4-r3 \
+        py3-cffi=1.15.1-r1 \
+        py3-cparser=2.21-r1 \
         py3-openssl=22.1.0-r1 \
         py3-service_identity=21.1.0-r2
 
