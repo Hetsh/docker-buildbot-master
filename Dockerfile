@@ -17,7 +17,7 @@ RUN apk update && \
         py3-twisted=22.10.0-r1 \
         py3-setuptools=65.6.3-r0 \
         py3-hyperlink=21.0.0-r3 \
-        py3-cryptography=38.0.4-r0 \
+        py3-cryptography=39.0.0-r0 \
         py3-six=1.16.0-r4 \
         py3-mako=1.2.4-r0 \
         py3-markupsafe=2.1.1-r2 \
