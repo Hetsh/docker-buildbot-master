@@ -10,7 +10,7 @@ RUN apk update && \
         py3-txaio=23.1.1-r0 \
         py3-dateutil=2.8.2-r2 \
         py3-alembic=1.7.7-r1 \
-        py3-sqlalchemy=1.4.39-r1 \
+        py3-sqlalchemy=1.4.45-r0 \
         py3-zope-interface=5.5.2-r0 \
         py3-msgpack=1.0.4-r1 \
         py3-jinja2=3.1.2-r1 \
