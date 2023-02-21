@@ -5,7 +5,7 @@ RUN apk update && \
         python3=3.11.2-r0 \
         py3-greenlet=2.0.2-r0 \
         py3-yaml=6.0-r1 \
-        py3-jwt=2.6.0-r1 \
+        py3-jwt=2.6.0-r2 \
         py3-autobahn=22.12.1-r0 \
         py3-txaio=23.1.1-r0 \
         py3-dateutil=2.8.2-r2 \
