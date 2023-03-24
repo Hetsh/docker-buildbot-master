@@ -17,7 +17,7 @@ RUN apk update && \
         py3-twisted=22.10.0-r1 \
         py3-setuptools=67.6.0-r0 \
         py3-hyperlink=21.0.0-r3 \
-        py3-cryptography=39.0.2-r0 \
+        py3-cryptography=40.0.0-r0 \
         py3-six=1.16.0-r5 \
         py3-mako=1.2.4-r0 \
         py3-markupsafe=2.1.2-r0 \
@@ -29,7 +29,7 @@ RUN apk update && \
         py3-idna=3.4-r3 \
         py3-cffi=1.15.1-r1 \
         py3-cparser=2.21-r1 \
-        py3-openssl=23.0.0-r0 \
+        py3-openssl=23.1.0-r0 \
         py3-service_identity=21.1.0-r3
 
 # App user
