@@ -2,7 +2,7 @@ FROM amd64/alpine:20230329
 RUN apk update && \
     apk add --no-cache \
         git=2.40.0-r1 \
-        python3=3.11.3-r2 \
+        python3=3.11.3-r3 \
         py3-greenlet=2.0.2-r1 \
         py3-yaml=6.0-r2 \
         py3-jwt=2.6.0-r2 \
