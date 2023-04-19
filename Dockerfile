@@ -5,7 +5,7 @@ RUN apk update && \
         python3=3.11.3-r10 \
         py3-greenlet=2.0.2-r1 \
         py3-yaml=6.0-r3 \
-        py3-jwt=2.6.0-r2 \
+        py3-jwt=2.6.0-r3 \
         py3-autobahn=22.12.1-r0 \
         py3-txaio=23.1.1-r0 \
         py3-dateutil=2.8.2-r2 \
@@ -16,7 +16,7 @@ RUN apk update && \
         py3-jinja2=3.1.2-r2 \
         py3-twisted=22.10.0-r2 \
         py3-setuptools=67.6.1-r1 \
-        py3-hyperlink=21.0.0-r3 \
+        py3-hyperlink=21.0.0-r4 \
         py3-cryptography=40.0.2-r1 \
         py3-six=1.16.0-r6 \
         py3-mako=1.2.4-r1 \
@@ -24,7 +24,7 @@ RUN apk update && \
         py3-typing-extensions=4.5.0-r0 \
         py3-attrs=23.1.0-r0 \
         py3-automat=22.10.0-r1 \
-        py3-incremental=22.10.0-r1 \
+        py3-incremental=22.10.0-r2 \
         py3-constantly=15.1.0-r7 \
         py3-idna=3.4-r4 \
         py3-cffi=1.15.1-r3 \
