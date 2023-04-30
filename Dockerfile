@@ -10,8 +10,8 @@ RUN apk update && \
         py3-txaio=23.1.1-r1 \
         py3-dateutil=2.8.2-r3 \
         py3-alembic=1.10.3-r0 \
-        py3-sqlalchemy=1.4.45-r1 \
-        py3-zope-interface=5.5.2-r1 \
+        py3-sqlalchemy=1.4.47-r0 \
+        py3-zope-interface=6.0-r0 \
         py3-msgpack=1.0.5-r1 \
         py3-jinja2=3.1.2-r2 \
         py3-twisted=22.10.0-r3 \
@@ -30,7 +30,7 @@ RUN apk update && \
         py3-cffi=1.15.1-r3 \
         py3-cparser=2.21-r2 \
         py3-openssl=23.1.1-r1 \
-        py3-service_identity=21.1.0-r3
+        py3-service_identity=21.1.0-r4
 
 # App user
 ARG APP_USER="buildbot"
