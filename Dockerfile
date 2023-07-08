@@ -20,7 +20,7 @@ RUN apk update && \
         py3-cryptography=41.0.1-r0 \
         py3-six=1.16.0-r6 \
         py3-mako=1.2.4-r1 \
-        py3-markupsafe=2.1.2-r1 \
+        py3-markupsafe=2.1.3-r0 \
         py3-typing-extensions=4.7.1-r0 \
         py3-attrs=23.1.0-r1 \
         py3-automat=22.10.0-r2 \
