@@ -15,9 +15,9 @@ RUN apk update && \
         py3-msgpack=1.0.5-r1 \
         py3-jinja2=3.1.2-r2 \
         py3-twisted=22.10.0-r3 \
-        py3-setuptools=68.0.0-r1 \
+        py3-setuptools=68.0.0-r2 \
         py3-hyperlink=21.0.0-r4 \
-        py3-cryptography=41.0.2-r1 \
+        py3-cryptography=41.0.2-r2 \
         py3-six=1.16.0-r6 \
         py3-mako=1.2.4-r1 \
         py3-markupsafe=2.1.3-r0 \
@@ -27,8 +27,8 @@ RUN apk update && \
         py3-incremental=22.10.0-r2 \
         py3-constantly=15.1.0-r7 \
         py3-idna=3.4-r4 \
-        py3-cffi=1.15.1-r3 \
-        py3-cparser=2.21-r2 \
+        py3-cffi=1.15.1-r4 \
+        py3-cparser=2.21-r3 \
         py3-openssl=23.2.0-r0 \
         py3-service_identity=21.1.0-r4
 
