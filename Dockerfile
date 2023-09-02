@@ -46,7 +46,7 @@ RUN adduser \
 VOLUME ["$DATA_DIR"]
 
 # Server files
-ARG APP_VERSION=3.9.1
+ARG APP_VERSION=3.9.2
 RUN MASTER_ARCHIVE="master.tar.gz" && \
     wget \
         --quiet \
