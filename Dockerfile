@@ -10,7 +10,7 @@ RUN apk update && \
         py3-txaio=23.1.1-r1 \
         py3-dateutil=2.8.2-r4 \
         py3-alembic=1.11.1-r0 \
-        py3-sqlalchemy=2.0.20-r0 \
+        py3-sqlalchemy=2.0.21-r0 \
         py3-zope-interface=6.0-r0 \
         py3-msgpack=1.0.5-r1 \
         py3-jinja2=3.1.2-r2 \
@@ -21,7 +21,7 @@ RUN apk update && \
         py3-six=1.16.0-r7 \
         py3-mako=1.2.4-r1 \
         py3-markupsafe=2.1.3-r0 \
-        py3-typing-extensions=4.7.1-r1 \
+        py3-typing-extensions=4.8.0-r0 \
         py3-attrs=23.1.0-r1 \
         py3-automat=22.10.0-r2 \
         py3-incremental=22.10.0-r2 \
