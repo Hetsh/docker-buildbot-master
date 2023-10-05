@@ -9,7 +9,7 @@ RUN apk update && \
         py3-autobahn=23.6.2-r0 \
         py3-txaio=23.1.1-r1 \
         py3-dateutil=2.8.2-r4 \
-        py3-alembic=1.11.1-r0 \
+        py3-alembic=1.12.0-r0 \
         py3-sqlalchemy=2.0.21-r0 \
         py3-zope-interface=6.0-r0 \
         py3-msgpack=1.0.7-r0 \
