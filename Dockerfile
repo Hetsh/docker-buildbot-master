@@ -13,7 +13,7 @@ RUN apk update && \
         py3-sqlalchemy=2.0.21-r0 \
         py3-zope-interface=6.0-r0 \
         py3-msgpack=1.0.7-r0 \
-        py3-jinja2=3.1.2-r2 \
+        py3-jinja2=3.1.2-r3 \
         py3-twisted=22.10.0-r3 \
         py3-setuptools=68.2.2-r0 \
         py3-hyperlink=21.0.0-r4 \
