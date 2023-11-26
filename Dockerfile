@@ -26,7 +26,7 @@ RUN apk update && \
         py3-automat=22.10.0-r2 \
         py3-incremental=22.10.0-r2 \
         py3-constantly=15.1.0-r7 \
-        py3-idna=3.4-r4 \
+        py3-idna=3.6-r0 \
         py3-cffi=1.16.0-r0 \
         py3-cparser=2.21-r4 \
         py3-openssl=23.3.0-r0 \
