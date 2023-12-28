@@ -31,9 +31,12 @@ TASK="${1-}"
 case "$TASK" in
 	# Assign production-tags
 	"--tag")
+		LATEST_TAG="$IMG_REPO/$IMG_NAME:latest"
+		docker tag "$IMG_ID" "$LATEST_TAG"
+
 		VERSION="$(git describe --tags --abbrev=0)"
-		docker tag "$IMG_ID" "$IMG_NAME"
-		docker tag "$IMG_ID" "$IMG_NAME:$VERSION"
+		VERSION_TAG="$IMG_REPO/$IMG_NAME:$VERSION"
+		docker tag "$IMG_ID" "$VERSION_TAG"
 	;;
 	# Test with default configuration
 	"--test")
