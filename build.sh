@@ -10,49 +10,65 @@ cd "$CWD"
 
 # Load helpful functions
 source libs/common.sh
-source libs/docker.sh
+
+# Error codes
+DOCKER_UNAVAILABLE=1
+UNKNOWN_TASK=2
 
 # Check access to docker daemon
 assert_dependency "docker"
 if ! docker version &> /dev/null; then
 	echo "Docker daemon is not running or you have unsufficient permissions!"
-	exit -1
+	exit "$DOCKER_UNAVAILABLE"
 fi
 
-IMG_NAME="hetsh/buildbot-master"
-case "${1-}" in
-	# Build and test with default configuration
+docker build .
+IMG_ID=$(docker build -q .)
+IMG_NAME="buildbot-master"
+IMG_REPO="hetsh"
+
+TASK="${1-}"
+case "$TASK" in
+	# Assign production-tags
+	"--tag")
+		VERSION="$(git describe --tags --abbrev=0)"
+		docker tag "$IMG_ID" "$IMG_NAME"
+		docker tag "$IMG_ID" "$IMG_NAME:$VERSION"
+	;;
+	# Test with default configuration
 	"--test")
-		docker build \
-			--tag "$IMG_NAME:test" \
-			.
 		docker run \
 			--rm \
 			--tty \
 			--interactive \
 			--publish 8010:8010/tcp \
 			--publish 9989:9989/tcp \
-			--mount type=bind,source=/etc/localtime,target=/etc/localtime,readonly \
-			"$IMG_NAME:test" --version
+			--volume /etc/localtime:/etc/localtime:ro \
+			"$IMG_ID"
 	;;
-	# Build if it does not exist and push image to docker hub
+	# Push image with production-tags, delete local ones
 	"--upload")
-		if ! tag_exists "$IMG_NAME"; then
-			docker build \
-				--tag "$IMG_NAME:latest" \
-				--tag "$IMG_NAME:$_NEXT_VERSION" \
-				.
-			docker push "$IMG_NAME:latest"
-			docker push "$IMG_NAME:$_NEXT_VERSION"
-			
-			# Remove version for easier image cleanup
-			docker image rm "$IMG_NAME:$_NEXT_VERSION"
-		fi
+		LATEST_TAG="$IMG_REPO/$IMG_NAME:latest"
+		docker tag "$IMG_ID" "$LATEST_TAG"
+		docker push "$LATEST_TAG"
+
+		VERSION="$(git describe --tags --abbrev=0)"
+		VERSION_TAG="$IMG_REPO/$IMG_NAME:$VERSION"
+		docker tag "$IMG_ID" "$VERSION_TAG"
+		docker push "$VERSION_TAG"
+
+		docker image rm "$LATEST_TAG"
+		docker image rm "$VERSION_TAG"
 	;;
-	# Build image without additonal steps
+	# Print temporary tag disclaimer
+	"")
+		echo "Build successful!"
+		echo "The image has not been tagged!"
+		echo "Use the image ID instead: $IMG_ID"
+	;;
+	# Catch and notify about unkown task
 	*)
-		docker build \
-			--tag "$IMG_NAME:latest" \
-			.
+		echo "Unknown task \"$TASK\"!"
+		exit $UNKNOWN_TASK
 	;;
 esac
